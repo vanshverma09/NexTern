@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Duration - NexTern</title>
+    <link rel="stylesheet" href="duration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .duration-card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+        .duration-card-content h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        .duration-card-content p {
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+        .duration-card-content .btn-primary {
+            width: 100%;
+        }
+        
+        .page-header {
+            text-align: center;
+            padding: 10rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Blobs -->
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="rocket" class="logo-icon"></i>
+                Nex<span class="gradient-text">Tern</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Select <span class="gradient-text">Duration</span></h1>
+            <p id="domain-subtitle">Choose the timeline that works best for you.</p>
+        </section>
+
+        <section class="internships-section" style="padding-top: 0;">
+            <div class="domain-grid">
+                
+                <div class="domain-card">
+                    <div class="duration-card-content">
+                        <div class="card-icon"><i data-lucide="clock"></i></div>
+                        <h3>4 Weeks</h3>
+                        <p>Fast-track module designed for quick learning and essential skill building.</p>
+                        <a href="https://forms.gle/PK8hZcatJ3pgWRJi9" target="_blank" class="btn-primary">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="duration-card-content">
+                        <div class="card-icon"><i data-lucide="calendar"></i></div>
+                        <h3>6 Weeks</h3>
+                        <p>Accelerated module with a deeper dive into practical, hands-on tasks.</p>
+                        <a href="https://forms.gle/FbMnNaWVduHQDcMFA" target="_blank" class="btn-primary">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="duration-card-content">
+                        <div class="card-icon"><i data-lucide="calendar-days"></i></div>
+                        <h3>2 Months</h3>
+                        <p>Standard module balancing theory with substantial project development.</p>
+                        <a href="https://forms.gle/JpeBxhk9w7qshM1X6" target="_blank" class="btn-primary">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="duration-card-content">
+                        <div class="card-icon"><i data-lucide="calendar-range"></i></div>
+                        <h3>3 Months</h3>
+                        <p>Intermediate module for students wanting extensive real-world exposure.</p>
+                        <a href="https://forms.gle/kDfJ3N4mz16BAqRf7" target="_blank" class="btn-primary">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="duration-card-content">
+                        <div class="card-icon"><i data-lucide="hourglass"></i></div>
+                        <h3>4 Months</h3>
+                        <p>Advanced module focusing on complex problem-solving and deployment.</p>
+                        <a href="https://forms.gle/bcqpCwe2ve35n3b37" target="_blank" class="btn-primary">Apply Now</a>
+                    </div>
+                </div>
+
+
+
+                <div class="domain-card">
+                    <div class="duration-card-content">
+                        <div class="card-icon"><i data-lucide="award"></i></div>
+                        <h3>6 Months</h3>
+                        <p>Mastery module. Complete a capstone project and achieve expert proficiency.</p>
+                        <a href="https://forms.gle/Go7hTMK3chHLGZVm6" target="_blank" class="btn-primary">Apply Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">
+                    <i data-lucide="rocket" class="logo-icon"></i>
+                    Nex<span class="gradient-text">Tern</span>
+                </a>
+                <p>Empowering the next generation of tech leaders through accessible, hands-on learning experiences.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul style="display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary);">
+                    <li>
+                        <a href="https://chat.whatsapp.com/JdbfkAkhlYmD99KiKAcHQx?s=cl&p=a&mlu=0&ilr=0" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                                <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+                            </svg>
+                            Join WhatsApp Group
+                        </a>
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="mail" style="width: 18px;"></i> nexterncontact@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NexTern Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://chat.whatsapp.com/JdbfkAkhlYmD99KiKAcHQx?s=cl&p=a&mlu=0&ilr=0" target="_blank" class="floating-whatsapp" aria-label="Join our WhatsApp Group">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+            <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Dynamic domain naming from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const domain = urlParams.get('domain');
+        
+        if (domain) {
+            document.getElementById('domain-subtitle').innerHTML = `Choose the timeline for <strong style="color: white;">${domain}</strong> that works best for your schedule.`;
+        }
+    </script>
+</body>
+</html>
