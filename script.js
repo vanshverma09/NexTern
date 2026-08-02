@@ -51,10 +51,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Dynamic Domain Linking
-document.querySelectorAll('.domain-card').forEach(card => {
-    const domainName = card.querySelector('h3').innerText;
-    card.addEventListener('click', (e) => {
-        if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
-        window.location.href = `duration.html?domain=${encodeURIComponent(domainName)}`;
+const isDurationPage = window.location.pathname.includes('duration.html');
+if (!isDurationPage) {
+    document.querySelectorAll('.domain-card').forEach(card => {
+        const domainName = card.querySelector('h3').innerText;
+        card.addEventListener('click', (e) => {
+            if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
+            window.location.href = `duration.html?domain=${encodeURIComponent(domainName)}`;
+        });
     });
-});
+}
