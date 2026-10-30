@@ -50,14 +50,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Dynamic Domain Linking
-const isDurationPage = window.location.pathname.includes('duration.html');
-if (!isDurationPage) {
-    document.querySelectorAll('.domain-card').forEach(card => {
-        const domainName = card.querySelector('h3').innerText;
-        card.addEventListener('click', (e) => {
-            if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
-            window.location.href = `duration.html?domain=${encodeURIComponent(domainName)}`;
-        });
+// Google Form Linking for Domain Cards
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSergf64xNk_hRgWevJGceX_TqYqd43NfBWcRAiHsPYcsrxLHw/viewform?usp=publish-editor';
+
+document.querySelectorAll('.domain-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+        // If the user clicked the link directly, let the anchor tag handle opening the URL
+        if (e.target.closest('a')) return;
+        window.open(GOOGLE_FORM_URL, '_blank');
     });
-}
+});

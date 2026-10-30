@@ -372,6 +372,8 @@ pre {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .domain-card::before {
@@ -424,21 +426,29 @@ pre {
 }
 
 .card-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     color: var(--accent-2);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    margin-top: auto;
+    transition: color 0.3s ease;
 }
 
-.card-link i {
+.domain-card:hover .card-link {
+    color: #c084fc;
+}
+
+.card-link i,
+.card-link svg {
     width: 16px;
     height: 16px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
-.domain-card:hover .card-link i {
+.domain-card:hover .card-link i,
+.domain-card:hover .card-link svg {
     transform: translateX(5px);
 }
 
